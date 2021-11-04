@@ -53,7 +53,7 @@ const App = () => {
         ) : null}
 
         <ul className="todo-list">
-          {todos.map((item, i) => {
+          {todos.map((item) => {
             if (item.isHidden === false) {
               return (
               <Task setTodos ={setTodos} todos={todos} item={item} />
